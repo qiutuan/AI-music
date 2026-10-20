@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ai-music-studio
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 31MB
+server:
+  address: 127.0.0.1
+  port: 8080
+studio:
+  data-dir: ${STUDIO_DATA_DIR:../data}
+  text-model: ${STUDIO_TEXT_MODEL:dashscope:qwen-plus}
+  music-endpoint: ${STUDIO_MUSIC_ENDPOINT:}
+  music-api-key: ${STUDIO_MUSIC_API_KEY:}
